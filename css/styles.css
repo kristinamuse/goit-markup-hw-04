@@ -53,12 +53,17 @@ img{
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato;
 }
 
 /* section */
 .section{
     padding: 94px 0px;
+}
+
+/* list style */
+.list {
+    list-style: none;
 }
 
 /* header */
@@ -91,10 +96,6 @@ img{
 }
 
 /* site nav */
-.list {
-    list-style: none;
-}
-
 .site-nav{
     display: flex;
     margin-left: 93px;
@@ -166,9 +167,22 @@ img{
 
 /* hero */
 .hero {
-    background-color: #2F303A;
     text-align: center;
-    padding: 200px 0px;
+    padding: 200px 0px; 
+
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2F303A;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -227,6 +241,19 @@ img{
     padding: 0;
 }
 
+/* .example::before{
+    display: inline-flex;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    background-image: url(../images/antenna\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+} */
+
 .advantages-list .item{
     flex-basis: calc((100% - 90px) / 4);
     margin-right: 30px;
@@ -281,6 +308,7 @@ img{
 .team-card{
     background-color: var(--primary-background-colour);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .team-list{
@@ -316,6 +344,17 @@ img{
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
+}
+
+/* clients */
+
+.client-list{
+    display: flex;
+    padding: 0;
+}
+
+.client-link{
+    text-decoration: none;
 }
 
 /* footer */
@@ -452,6 +491,6 @@ img{
 }
 
 
-/* .item * {
+.item * {
     outline: 1px solid salmon;
-} */
+}
